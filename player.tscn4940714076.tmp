@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://c07aou5lyx0r4"]
+
+[ext_resource type="Script" uid="uid://bftduqg57mlox" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://ckpkfe478g0bq" path="res://ray_cast_3d.gd" id="2_onrkg"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_sh265"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4flbx"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_4flbx")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.794743, -0.167044)
+
+[node name="Camera3D" type="Camera3D" parent="head"]
+
+[node name="RayCast3D" type="RayCast3D" parent="head/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, -3.01033e-08, -1, 0, 0.688684, -4.37114e-08, 0, 0, 0)
+script = ExtResource("2_onrkg")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_sh265")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_4flbx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="interact" type="RichTextLabel" parent="CanvasLayer"]
+offset_right = 305.0
+offset_bottom = 78.0
+theme_override_font_sizes/normal_font_size = 51
+text = "[E] Interact"
