@@ -24,7 +24,13 @@ func _input(event: InputEvent) -> void:
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	
-
+	if Input.is_action_just_pressed("flash"):
+		if $head/Camera3D/SpotLight3D.visible == false:
+			$head/Camera3D/SpotLight3D.visible = true
+		elif $head/Camera3D/SpotLight3D.visible == true:
+			$head/Camera3D/SpotLight3D.visible = false
+	if Input.is_action_just_pressed("reset"):
+		get_tree().reload_current_scene()
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 

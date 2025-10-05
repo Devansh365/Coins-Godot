@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://c07aou5lyx0r4"]
+[gd_scene load_steps=6 format=3 uid="uid://c07aou5lyx0r4"]
 
 [ext_resource type="Script" uid="uid://bftduqg57mlox" path="res://player.gd" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://ckpkfe478g0bq" path="res://ray_cast_3d.gd" id="2_onrkg"]
+[ext_resource type="AudioStream" uid="uid://wac3b04dguvw" path="res://menu bg.mp3" id="3_i3pqv"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_sh265"]
 
@@ -18,6 +19,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.794743, -0.167044)
 [node name="RayCast3D" type="RayCast3D" parent="head/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, -9.6777e-08, -1, 0, 2.214, -4.37114e-08, 0, 0, 0)
 script = ExtResource("2_onrkg")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D"]
+light_energy = 2.674
+light_volumetric_fog_energy = 0.0
+spot_range = 13.09
+spot_angle = 15.65
+
+[node name="OmniLight3D" type="OmniLight3D" parent="head/Camera3D"]
+visible = false
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_sh265")
@@ -45,3 +55,25 @@ theme_override_font_sizes/normal_font_size = 31
 text = "total coins
 "
 metadata/_edit_use_anchors_ = true
+
+[node name="coins2" type="RichTextLabel" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = 0.763889
+anchor_top = 0.0447531
+anchor_right = 0.960069
+anchor_bottom = 0.199074
+offset_left = -1.0
+offset_top = 69.0
+offset_right = -1.0
+offset_bottom = 69.0
+theme_override_colors/default_color = Color(0.771066, 0.0682009, 0.375694, 1)
+theme_override_font_sizes/normal_font_size = 31
+text = "[F]Flashlight
+[P]Reset
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_i3pqv")
+volume_db = 6.945
+autoplay = true

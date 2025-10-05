@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wac3b04dguvw"
+path="res://.godot/imported/menu bg.mp3-8b64b545475d6fd738eba9b5de759c6e.mp3str"
+
+[deps]
+
+source_file="res://menu bg.mp3"
+dest_files=["res://.godot/imported/menu bg.mp3-8b64b545475d6fd738eba9b5de759c6e.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
