@@ -24,3 +24,5 @@ Good Luck :)
 
 ![maze ss](https://github.com/user-attachments/assets/23354933-21ae-4386-aae6-d2fd0f55f75f)
 <img width="1918" height="1078" alt="laby thumnail" src="https://github.com/user-attachments/assets/7e25c4e4-89f4-4ab5-b49d-35c647844500" />
+<img width="1050" height="609" alt="Screenshot 2025-10-12 215826" src="https://github.com/user-attachments/assets/f8f2f4fb-5773-4082-944e-b82d3099b0e6" />
+<img width="1919" height="1079" alt="Screenshot 2025-10-12 220536" src="https://github.com/user-attachments/assets/cb837674-f187-45f9-88c5-9c785c603b0f" />
