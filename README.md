@@ -1,9 +1,15 @@
 # Coins Godot
+You are just a another warrior trying to complete the trials of gods to attain Eternity
 
-A horror/puzzle which game challenges you to complete the dark and sinister maze and escape with no injuries....
+currently only 2 trials/levels have been made
 
+trial 1 - Labyrinth
+A horror/puzzle which level challenges you to complete the dark and sinister maze and escape with no injuries....
 Funtionality - You must collect all the 3 coins scattered in the maze only then you will be able to unlock the escape route
 Maps of the labyrinth have been scattered here and there
+trial 2 - The magical Forest
+An eerie/mysterious level which challeges you to cross the river styx without touching it or you will get cursed
+this level is setted in a dark magical forest in which you will have to find the 3 charms and place them at the alter as offerings, only then you will be able to cross the river....
 
 Controls 
 W - Forward
@@ -13,8 +19,6 @@ D - Right
 P - Reset
 F - Flashlight
 E - interact
-
-NOTE: It is more of a puzzle game as there is no entity haunting you besides the scary environment and music
 
 Good Luck :)
 
