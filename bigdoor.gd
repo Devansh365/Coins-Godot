@@ -36,11 +36,9 @@ func interact() -> void:
 		# If all slots are already visible
 	if coinplaced == 3:
 		if done == false:
-		
 			$"../../AnimationPlayer".play("open")
 			done = true
-
-
+			Signalman.coinpicked.emit()
 
 func coinpicked() -> void:
 	# Called when a coin is picked up
